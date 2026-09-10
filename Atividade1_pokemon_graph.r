@@ -26,7 +26,7 @@ top_types
 filtered_data <- filtered_data %>%
   mutate(type = str_to_title(type))
 
-# ------------ GGplot Core collection
+# ------------ ggplot 
 
 ggplot(filtered_data, aes(x = sp.atk, y = speed, color = type)) +
   geom_point(alpha = 0.7, size = 2.5) +
